@@ -1,0 +1,107 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f3f9f3; /* Light green background */
+    color: #2f4f2f; /* Dark green text */
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #1b5e20; /* Deep green */
+    margin: 20px 0;
+}
+
+/* Container for all nodes */
+#node-view-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Individual node card */
+.node-card {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 0; /* Add space between divs */
+    padding: 15px;
+    border: 2px solid #4caf50; /* Green border */
+    border-radius: 8px;
+    background-color: #e8f5e9; /* Light green */
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.1); /* Subtle green shadow */
+}
+
+/* Node card header */
+.node-card h2 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #2e7d32; /* Medium green */
+}
+
+/* Text inside cards */
+.node-card p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+/* Labels for inputs */
+.node-card label {
+    font-size: 0.9em;
+    color: #1b5e20; /* Dark green */
+}
+
+/* Range and number inputs */
+.node-card input[type="range"],
+.node-card input[type="number"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #4caf50; /* Green border */
+    border-radius: 4px;
+}
+
+/* Buttons */
+.node-card button {
+    width: 100%;
+    padding: 10px;
+    background-color: #388e3c; /* Darker green */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.node-card button:hover {
+    background-color: #2e7d32; /* Slightly darker green on hover */
+}
+
+/* Graph container */
+canvas {
+        min-width: 300px;
+        min-height: 150px;
+
+
+    margin-top: 10px;
+    border: 1px solid #c8e6c9; /* Subtle border */
+}
+
+/* Mobile Optimization */
+@media (max-width: 550px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .node-card {
+        padding: 10px;
+    }
+
+    .node-card h2 {
+        font-size: 1em;
+    }
+}
